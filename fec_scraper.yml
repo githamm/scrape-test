@@ -1,0 +1,25 @@
+name: Scrape Inciweb incident data
+
+on:
+  push:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/2 * * * *"
+
+jobs:
+  scheduled:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out this repo
+        uses: actions/checkout@v2
+      - name: Fetch latest data
+        run: |-
+          curl -k -X GET "https://api.open.fec.gov/v1/candidates/totals/?sort_nulls_last=false&per_page=20&election_full=true&page=1&api_key=DEMO_KEY&cycle=2022&sort_hide_null=false&state=CO&sort_null_only=false" -H "accept: application/json" | jq '.'  > candidates_2022.json
+      - name: Commit and push if changed
+        run: |-
+          git config user.name "Automated"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          timestamp=$(date -u)
+          git commit -m "Latest data: ${timestamp}" || exit 0
+          git push
