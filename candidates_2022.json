@@ -1088,14 +1088,14 @@
       "last_file_date": "2021-05-18",
       "candidate_inactive": false,
       "coverage_start_date": "2021-04-15T00:00:00",
-      "coverage_end_date": "2022-10-19T00:00:00",
+      "coverage_end_date": "2022-11-25T00:00:00",
       "district": "06",
       "party_full": "LIBERTARIAN PARTY",
       "state": "CO",
       "address_city": "AURORA",
       "incumbent_challenge": "C",
-      "disbursements": 3314.49,
-      "cash_on_hand_end_period": 15,
+      "disbursements": 5257.41,
+      "cash_on_hand_end_period": -1942.92,
       "last_f2_date": "2021-05-18",
       "election_districts": [
         "06"
