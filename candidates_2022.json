@@ -19,7 +19,7 @@
       "candidate_id": "H0CO04197",
       "candidate_inactive": false,
       "candidate_status": "C",
-      "cash_on_hand_end_period": "176636.04",
+      "cash_on_hand_end_period": "15687.55",
       "coverage_end_date": "2022-12-31",
       "coverage_start_date": "2021-01-01",
       "cycle": 2022,
@@ -28,8 +28,8 @@
         2022,
         2024
       ],
-      "debts_owed_by_committee": "5270.80",
-      "disbursements": 279346.29,
+      "debts_owed_by_committee": "7870.80",
+      "disbursements": 283617.12,
       "district": "04",
       "district_number": 4,
       "election_districts": [
@@ -59,7 +59,7 @@
       "other_political_committee_contributions": 0,
       "party": "DEM",
       "party_full": "DEMOCRATIC PARTY",
-      "receipts": 303509.38,
+      "receipts": 303509.4,
       "state": "CO",
       "state_full": "Colorado",
       "transfers_from_other_authorized_committee": 0,
